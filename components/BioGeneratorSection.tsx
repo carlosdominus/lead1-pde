@@ -66,7 +66,14 @@ export const BioGeneratorSection: React.FC<BioGeneratorSectionProps> = ({ onCtaC
 
               {/* Chat Messages */}
               <div className="space-y-4">
-                 {/* Her Message */}
+                 {/* Your Message (Right) */}
+                 <div className="flex justify-end">
+                    <div className="bg-[#1786FF] text-white p-3 rounded-2xl rounded-br-sm text-sm font-medium leading-relaxed max-w-[85%] shadow-md shadow-blue-200">
+                       Oh, you're new here huh? Don't worry, you just found yourself a tour guide 😉
+                    </div>
+                 </div>
+
+                 {/* Her Message (Left) */}
                  <div className="flex items-end gap-2">
                     <img 
                       src="https://i.ibb.co/Df7VcDVp/webp.webp" 
@@ -74,13 +81,6 @@ export const BioGeneratorSection: React.FC<BioGeneratorSectionProps> = ({ onCtaC
                       alt="Avatar"
                     />
                     <div className="bg-slate-100 text-slate-700 p-3 rounded-2xl rounded-bl-sm text-sm font-medium leading-relaxed max-w-[85%]">
-                       Oh, you're new here huh? Don't worry, you just found yourself a tour guide 😉
-                    </div>
-                 </div>
-
-                 {/* Your Message */}
-                 <div className="flex justify-end">
-                    <div className="bg-[#1786FF] text-white p-3 rounded-2xl rounded-br-sm text-sm font-medium leading-relaxed max-w-[85%] shadow-md shadow-blue-200">
                        But I might take you up on that offer...
                     </div>
                  </div>
