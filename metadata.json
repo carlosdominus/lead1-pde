@@ -1,0 +1,5 @@
+{
+  "name": "LEAD1-PDE",
+  "description": "A React implementation of the Emotional Spikes Method landing page with functional AI analysis for Instagram story replies using Google Gemini.",
+  "requestFramePermissions": []
+}

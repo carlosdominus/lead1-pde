@@ -1,0 +1,104 @@
+import React from 'react';
+import { Heart } from 'lucide-react';
+
+interface ConversationModeSectionProps {
+  onCtaClick: () => void;
+}
+
+export const ConversationModeSection: React.FC<ConversationModeSectionProps> = ({ onCtaClick }) => {
+  return (
+    <section className="py-24 bg-[#050505] relative overflow-hidden flex flex-col items-center">
+      {/* Background Gradients */}
+      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[600px] h-[600px] bg-pink-900/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-red-900/5 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col items-center w-full">
+        
+        {/* Text Content */}
+        <div className="flex flex-col items-center text-center space-y-8 max-w-3xl mx-auto mb-16">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-pink-500/30 bg-pink-500/10 shadow-[0_0_0_1px_rgba(236,72,153,0.1)]">
+              <Heart size={18} className="text-pink-500 fill-current" />
+              <span className="text-sm font-bold text-pink-500 tracking-wide">Flirting Technique</span>
+            </div>
+
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight">
+              <span className="bg-gradient-to-r from-white via-pink-100 to-pink-300 bg-clip-text text-transparent">
+                Never be seen as 'just another nice guy' ever again
+              </span>
+            </h2>
+
+            <p className="text-base text-slate-400 font-medium leading-relaxed max-w-lg">
+              Every woman receives validation all day long, but now you'll know the exact compliments that spike her dopamine and make her crave YOUR attention.
+            </p>
+
+            <button 
+              onClick={onCtaClick}
+              className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full text-white font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_-5px_rgba(37,99,235,0.4)] active:scale-95"
+            >
+              Master The Method Now
+            </button>
+        </div>
+
+        {/* Visual Composition - Chat UI */}
+        <div className="relative w-full max-w-[400px] mx-auto">
+             <div className="bg-[#0F0F13] border border-gray-800 rounded-[2rem] p-6 shadow-2xl relative z-10">
+                
+                {/* Chat Header */}
+                <div className="flex items-center gap-4 mb-6 border-b border-white/5 pb-4">
+                   <div className="relative">
+                      {/* PROFILE PICTURE HERE */}
+                      <img 
+                        src="https://i.ibb.co/X6CkK7R/photo-1556151994-b611e5ab3675-1.webp" 
+                        alt="Profile" 
+                        className="w-12 h-12 rounded-full object-cover ring-2 ring-pink-500/30"
+                      />
+                      <div className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full ring-2 ring-[#0F0F13]"></div>
+                   </div>
+                   <div>
+                      <h3 className="text-white font-bold">Jessica</h3>
+                      <p className="text-xs text-pink-400 font-medium">Online now</p>
+                   </div>
+                </div>
+
+                {/* Messages */}
+                <div className="space-y-4">
+                   {/* Him */}
+                   <div className="flex justify-end">
+                      <div className="bg-blue-600 text-white p-4 rounded-2xl rounded-tr-sm text-sm leading-relaxed max-w-[90%]">
+                         I thought you were really beautiful, I had to come over here and say hi
+                      </div>
+                   </div>
+
+                   {/* Her (with small profile pic) */}
+                   <div className="flex items-end gap-3">
+                      <img 
+                        src="https://i.ibb.co/X6CkK7R/photo-1556151994-b611e5ab3675-1.webp" 
+                        className="w-8 h-8 rounded-full object-cover mb-1 opacity-80"
+                        alt="Avatar"
+                      />
+                      <div className="bg-white/10 text-gray-200 p-4 rounded-2xl rounded-tl-sm text-sm leading-relaxed border border-white/5">
+                         Omg that's so sweet 🙈 you definitely made my day!
+                      </div>
+                   </div>
+
+                   {/* Him */}
+                   <div className="flex justify-end">
+                      <div className="bg-blue-600 text-white p-4 rounded-2xl rounded-tr-sm text-sm leading-relaxed max-w-[90%] flex items-center gap-2">
+                         What's your name? 😌
+                      </div>
+                   </div>
+                </div>
+
+             </div>
+
+             {/* Floating Badge */}
+             <div className="absolute -right-8 top-1/2 -translate-y-1/2 bg-white/10 backdrop-blur-xl border border-white/20 p-3 rounded-2xl shadow-xl hidden md:block animate-float z-20">
+                <span className="text-2xl">😍</span>
+             </div>
+        </div>
+
+      </div>
+    </section>
+  );
+};
