@@ -11,8 +11,8 @@ export const VSLSection: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const scriptUrl = "https://scripts.converteai.net/853c4f04-8442-44da-b89d-0541d78036bb/players/693a46ace891e679e7727fdd/v4/player.js";
-    const playerId = "vid-693a46ace891e679e7727fdd";
+    const scriptUrl = "https://scripts.converteai.net/853c4f04-8442-44da-b89d-0541d78036bb/players/693a4826b14056e2ac8d39e1/v4/player.js";
+    const playerId = "vid-693a4826b14056e2ac8d39e1";
 
     // 1. Load Script (Idempotent)
     if (!document.querySelector(`script[src="${scriptUrl}"]`)) {
