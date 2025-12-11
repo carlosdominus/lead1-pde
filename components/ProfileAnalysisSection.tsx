@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Clock, AlertTriangle } from 'lucide-react';
+import { Zap, AlertTriangle } from 'lucide-react';
 
 interface ProfileAnalysisSectionProps {
   onCtaClick: () => void;

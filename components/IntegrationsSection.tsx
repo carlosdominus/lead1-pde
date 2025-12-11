@@ -1,6 +1,4 @@
-
-import React from 'react';
-import { Zap, MapPin, PartyPopper, Instagram, Heart, Briefcase, Globe, MessageCircle, Users, Sparkles } from 'lucide-react';
+import { Zap, MapPin, PartyPopper, Instagram, Heart, Globe, MessageCircle, Users, Sparkles } from 'lucide-react';
 
 export const IntegrationsSection = () => {
   const contexts = [

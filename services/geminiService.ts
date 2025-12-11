@@ -1,6 +1,9 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { GeneratedReply } from "../types";
 
+// Fix for "Cannot find name 'process'" in environments without node types
+declare const process: any;
+
 export const analyzeStoryImage = async (base64Image: string): Promise<GeneratedReply[]> => {
   // Initialize client inside the function to ensure process.env is ready and avoid top-level crashes
   const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });

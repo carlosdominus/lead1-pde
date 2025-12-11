@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
-import { Upload, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { analyzeStoryImage } from './services/geminiService';
-import { GeneratedReply, AnalysisState } from './types';
+import { AnalysisState } from './types';
 import { FloatingBubble } from './components/FloatingBubble';
 import { AnalysisModal } from './components/AnalysisModal';
 import { IntegrationsSection } from './components/IntegrationsSection';
